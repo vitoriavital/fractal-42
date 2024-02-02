@@ -24,7 +24,7 @@ $(OBJS_PATH):
 
 $(NAME): $(OBJS)
 	@$(CC) $(OBJS) $(LIBS) $(HEADERS) -o $(NAME)
-	
+
 clean:
 	@rm -rf $(OBJS_PATH)
 	@rm -rf $(OBJS_PATH_BONUS)
@@ -32,6 +32,7 @@ clean:
 
 fclean: clean
 	@rm -f $(NAME)
+	@rm -f $(NAME)_bonus
 
 re: clean all
 
