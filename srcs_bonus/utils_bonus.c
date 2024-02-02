@@ -6,7 +6,7 @@
 /*   By: mavitori <mavitori@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 17:47:52 by mavitori          #+#    #+#             */
-/*   Updated: 2024/02/01 12:46:48 by mavitori         ###   ########.fr       */
+/*   Updated: 2024/02/02 18:09:27 by mavitori         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,12 +77,13 @@ int	ft_errors(char c)
 	if (c == 'I')
 	{
 		ft_putstr_fd("Invalid option.\n", 1);
-		ft_putstr_fd("You must choose either mandelbrot or julia.\n", 1);
+		ft_putstr_fd("You must choose either mandelbrot, julia, or burning.\n", 1);
 	}
 	else if (c == 'J')
 	{
 		ft_putstr_fd("For julia, you need to include 2 arguments.\n", 1);
-		ft_putstr_fd("Ex: ./fractol julia <real_value> <imaginary_value>\n", 1);
+		ft_putstr_fd("./fractol julia <real_value> <imaginary_value>\n", 1);
+		ft_putstr_fd("Ex: ./fractol julia -0.7 0.27015 \n", 1);
 	}
 	return (1);
 }
