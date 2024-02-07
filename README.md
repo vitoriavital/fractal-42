@@ -1,6 +1,8 @@
 # Fract-ol
 
-Fract-ol is a project aimed at creating graphically beautiful fractals using computer graphics techniques. This project offers an opportunity to explore the mlx42 library, utilize mathematical concepts such as complex numbers, delve into optimization in computer graphics, and practice event handling. MLX42 is a performant, easy to use, cross-platform windowing library to create graphical applications without having to work directly with the native Windowing Framework of the given operating system.
+Fract-ol is a project aimed at creating graphically beautiful fractals using computer graphics techniques. This project offers an opportunity to explore the mlx42 library, utilize mathematical concepts such as complex numbers, delve into optimization in computer graphics, and practice event handling. 
+
+MLX42 is a performant, easy to use, cross-platform windowing library to create graphical applications without having to work directly with the native Windowing Framework of the given operating system.
 ```bash
 https://github.com/codam-coding-college/MLX42
 ```
