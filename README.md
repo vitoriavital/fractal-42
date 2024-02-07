@@ -1,0 +1,42 @@
+# Fract-ol
+
+Fract-ol is a project aimed at creating graphically beautiful fractals using computer graphics techniques. This project offers an opportunity to explore the mlx42 library, utilize mathematical concepts such as complex numbers, delve into optimization in computer graphics, and practice event handling. MLX42 is a performant, easy to use, cross-platform windowing library to create graphical applications without having to work directly with the native Windowing Framework of the given operating system.
+```bash
+https://github.com/codam-coding-college/MLX42
+```
+
+## Features
+
+Fract-ol includes the following features:
+
+- **Mandelbrot Set**: The classic Mandelbrot set is generated.
+- **Julia Set**: Allows the user to explore the Julia set by specifying real and imaginary numbers.
+- **Burning Ship Fractal**: The burning ship fractal is generated.
+- **Interactive Zoom**: Zoom in and out using the scroll wheel, following the mouse position.
+- **Continuous Zoom**: Hold down the mouse button to continuously zoom in or out.
+- **Color Change**: Press the Enter key to change the color palette of the fractal.
+- **Exit**: Press the Esc key to exit the program.
+
+## How to Use
+
+To run Fract-ol, follow these steps:
+
+1. Clone the repository: `git clone [repository_url]`
+2. Navigate to the project directory: `cd fract-ol`
+3. Compile the program: `make` or `make bonus`
+4. Run the executable: `./fractol [fractal_type]`
+   - Replace `[fractal_type]` with `mandelbrot`, `julia`, or `burning` to generate the respective fractal.
+
+## Controls
+
+- **Zoom In**: Right-click or Scroll-In
+- **Zoom Out**: Left-click or Scroll-Out
+- **Continuous Zoom**: Hold down the mouse button while zooming.
+- **Change Color Palette**: Press Enter
+- **Exit Program**: Press Esc
+
+## Dependencies
+
+Fract-ol relies on the following dependencies:
+
+- **Codam mlx42 Library**: The internal mlx42 library is used for graphics rendering and event handling.
