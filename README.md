@@ -57,7 +57,3 @@ Fract-ol relies on the following dependencies:
 ```bash
 https://github.com/codam-coding-college/MLX42
 ```
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/main
