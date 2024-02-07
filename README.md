@@ -21,11 +21,23 @@ Fract-ol includes the following features:
 
 To run Fract-ol, follow these steps:
 
-1. Clone the repository: `git clone [repository_url]`
-2. Navigate to the project directory: `cd fract-ol`
-3. Compile the program: `make` or `make bonus`
-4. Run the executable: `./fractol [fractal_type]`
+1. Clone the repository:
+```bash
+git clone https://github.com/vitoriavital/fractal-42.git fract-ol
+```
+3. Navigate to the project directory: `cd fract-ol`
+4. Compile the program: `make` or `make bonus`
+5. Run the executable: `./fractol [fractal_type]`
    - Replace `[fractal_type]` with `mandelbrot`, `julia`, or `burning` to generate the respective fractal.
+```bash
+./fractol mandelbrot
+```
+```bash
+./fractol julia -0.7 0.27015 
+```
+```bash
+./fractol burning
+```
 
 ## Controls
 
