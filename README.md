@@ -53,4 +53,7 @@ git clone https://github.com/vitoriavital/fractal-42.git fract-ol
 
 Fract-ol relies on the following dependencies:
 
-- **Codam mlx42 Library**: The internal mlx42 library is used for graphics rendering and event handling.
+- **Codam mlx42 Library**: The internal mlx42 library is used for graphics rendering and event handling. There are instructions to Download and Build MLX42, as well as installing its dependencies.
+```bash
+https://github.com/codam-coding-college/MLX42
+```
