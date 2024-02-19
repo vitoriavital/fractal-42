@@ -6,7 +6,7 @@
 /*   By: mavitori <mavitori@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 14:08:53 by mavitori          #+#    #+#             */
-/*   Updated: 2024/02/19 16:18:37 by mavitori         ###   ########.fr       */
+/*   Updated: 2024/02/19 16:19:51 by mavitori         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,14 +51,6 @@ typedef struct s_set
 	double		z_real;
 	double		z_img;
 }				t_set;
-
-typedef struct s_colors
-{
-	int			red;
-	int			blue;
-	int			green;
-	int			alpha;
-}				t_colors;
 
 int32_t			ft_pixel(int32_t r, int32_t g, int32_t b, int32_t a);
 int32_t			ft_def_color(int n, t_fractol fractol);
