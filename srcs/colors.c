@@ -6,7 +6,7 @@
 /*   By: mavitori <mavitori@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 14:11:07 by mavitori          #+#    #+#             */
-/*   Updated: 2024/02/01 11:33:18 by mavitori         ###   ########.fr       */
+/*   Updated: 2024/02/19 16:13:09 by mavitori         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,23 +30,12 @@ int32_t	ft_def_color(int n, t_fractol fractol)
 	{
 		if (fractol.type == 'M')
 		{
-			// fractol.red = (int)(255 * sin(0.1 * (color_range + 1) * n)) + 128;
-			// fractol.green = (int)(255 * sin(0.2 * (color_range + 1) * n)) + 128;
-			// fractol.blue = (int)(255 * sin(0.3 * (color_range + 1) * n)) + 128;
-			//Blue
-			// fractol.red = 0;
-			// fractol.green = (int)(sin(0.03 * n) * 200);
-			// fractol.blue = (int)(sin(0.04 * n) * 200);
-			// fractol.red = (int)(sin(0.02 * n) * 255);
-			// fractol.green = (int)(sin(0.02 * n) * 255);
-			// fractol.blue = (int)(sin(0.02 * n) * 255);
 			fractol.red = (int)(sin(0.05 * n) * 255);
 			fractol.green = (int)(sin(0.00 * n) * 255);
 			fractol.blue = (int)(sin(0.00 * n) * 255);
 		}
 		else if (fractol.type == 'J')
 		{
-
 			color_value = (int)(255 * sin(0.02 * n));
 			fractol.red = (color_range == 0) * color_value;
 			fractol.green = (color_range == 1) * color_value;
@@ -54,18 +43,11 @@ int32_t	ft_def_color(int n, t_fractol fractol)
 		}
 		color = ft_pixel(fractol.red, fractol.green, fractol.blue, 255);
 	}
-
 	return (color);
 }
 
 void	ft_color_shift(t_fractol *fractol)
 {
-	// printf("\n Hello!\n");
-	// printf("Before: R%d G%d B%d", fractol->red, fractol->green, fractol->blue);
-	// fractol->blue = (int)(255 * sin(0.02 * fractol->red)) + 128;
-	// fractol->red = 0;
-	// fractol->green = 0;
-	// printf("After: R%d G%d B%d", fractol->red, fractol->green, fractol->blue);
 	fractol->color_range += 1;
 	ft_build_fractal((void *)fractol);
 }
