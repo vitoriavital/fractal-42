@@ -6,7 +6,7 @@
 /*   By: mavitori <mavitori@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 14:11:07 by mavitori          #+#    #+#             */
-/*   Updated: 2024/02/19 16:18:14 by mavitori         ###   ########.fr       */
+/*   Updated: 2024/02/19 16:24:06 by mavitori         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,6 @@ static void	ft_def_bonus_color(int n, t_fractol *fractol, int color_range)
 int32_t	ft_def_color(int n, t_fractol fractol)
 {
 	uint32_t	color;
-	int			color_value;
 	int			color_range;
 
 	color_range = fractol.color_range % 3;
