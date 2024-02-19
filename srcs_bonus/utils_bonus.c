@@ -6,7 +6,7 @@
 /*   By: mavitori <mavitori@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 17:47:52 by mavitori          #+#    #+#             */
-/*   Updated: 2024/02/02 18:09:27 by mavitori         ###   ########.fr       */
+/*   Updated: 2024/02/19 16:14:43 by mavitori         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,8 @@ int	ft_errors(char c)
 	if (c == 'I')
 	{
 		ft_putstr_fd("Invalid option.\n", 1);
-		ft_putstr_fd("You must choose either mandelbrot, julia, or burning.\n", 1);
+		ft_putstr_fd("You must choose either mandelbrot, julia, or burning.\n",
+			1);
 	}
 	else if (c == 'J')
 	{

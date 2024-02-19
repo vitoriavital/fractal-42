@@ -6,7 +6,7 @@
 /*   By: mavitori <mavitori@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 14:11:07 by mavitori          #+#    #+#             */
-/*   Updated: 2024/02/19 16:13:09 by mavitori         ###   ########.fr       */
+/*   Updated: 2024/02/19 16:15:42 by mavitori         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,10 +44,4 @@ int32_t	ft_def_color(int n, t_fractol fractol)
 		color = ft_pixel(fractol.red, fractol.green, fractol.blue, 255);
 	}
 	return (color);
-}
-
-void	ft_color_shift(t_fractol *fractol)
-{
-	fractol->color_range += 1;
-	ft_build_fractal((void *)fractol);
 }

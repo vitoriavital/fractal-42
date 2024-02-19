@@ -6,7 +6,7 @@
 /*   By: mavitori <mavitori@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 14:10:46 by mavitori          #+#    #+#             */
-/*   Updated: 2024/02/01 12:41:40 by mavitori         ###   ########.fr       */
+/*   Updated: 2024/02/19 16:15:03 by mavitori         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ int	ft_mandelbrot_iterations(int x, int y, t_fractol fractol)
 	s.z_real = 0.0;
 	s.z_img = 0.0;
 	i = 0;
-	while (s.z_real * s.z_real + s.z_img * s.z_img <= (2 * 2) && i < fractol.max_i)
+	while (s.z_real * s.z_real + s.z_img * s.z_img <= (2 * 2)
+		&& i < fractol.max_i)
 	{
 		real_temp = s.z_real * s.z_real - s.z_img * s.z_img + s.c_real;
 		s.z_img = 2.0 * s.z_real * s.z_img + s.c_img;

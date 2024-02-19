@@ -6,7 +6,7 @@
 /*   By: mavitori <mavitori@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 17:03:59 by mavitori          #+#    #+#             */
-/*   Updated: 2024/02/02 17:42:21 by mavitori         ###   ########.fr       */
+/*   Updated: 2024/02/19 16:14:19 by mavitori         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,19 +48,10 @@ void	ft_zoom_in(t_fractol *fractol)
 	zoom_before = (*fractol).zoom_range;
 	(*fractol).zoom_range -= (0.1 * zoom_before);
 	mlx_get_mouse_pos(fractol->mlx, &fractol->mouse_x, &fractol->mouse_y);
-	// printf("\n\n\n\n Mouse Position X: %d", (fractol->mouse_x));
-	// printf("\n Mouse Position Y: %d", (fractol->mouse_y));
 	mouse_x = ((double)(fractol->mouse_x) / fractol->width - 0.25) * 2.0;
 	mouse_y = ((double)(fractol->mouse_y) / fractol->height - 0.25) * 2.0;
-	// printf("\n X Mouse: %f", mouse_x);
-	// printf("\n Y Mouse: %f", mouse_y);
-	// printf("\n\n\nZoom Range Before: %f\n", (*fractol).zoom_range);
-	// printf("\nZoom Range AFTER: %f\n", zoom_before);
-	// printf("Coeficient of change: %f", (*fractol).zoom_range / zoom_before);
-	// printf("\nBEFORE: X: %f Y: %f ", (*fractol).move_x, (*fractol).move_y);
 	(*fractol).move_x += (mouse_x * 0.1 * zoom_before);
 	(*fractol).move_y += (mouse_y * 0.1 * zoom_before);
-	// printf("\nAFTER: X: %f Y: %f ", (*fractol).move_x, (*fractol).move_y);
 }
 
 void	ft_zoom_out(t_fractol *fractol)
@@ -72,17 +63,10 @@ void	ft_zoom_out(t_fractol *fractol)
 	zoom_before = (*fractol).zoom_range;
 	(*fractol).zoom_range += (0.1 * zoom_before);
 	mlx_get_mouse_pos(fractol->mlx, &fractol->mouse_x, &fractol->mouse_y);
-	// printf("\n\n\n\n Mouse Position X: %d", (fractol->mouse_x));
-	// printf("\n Mouse Position Y: %d", (fractol->mouse_y));
 	mouse_x = ((double)(fractol->mouse_x) / fractol->width - 0.25) * 2.0;
 	mouse_y = ((double)(fractol->mouse_y) / fractol->height - 0.25) * 2.0;
-	// printf("\n X Mouse: %f", mouse_x);
-	// printf("\n Y Mouse: %f", mouse_y);
-	// printf("\nZoom Range AFTER: %f\n", zoom_before);
-	// printf("\nBEFORE: X: %f Y: %f ", (*fractol).move_x, (*fractol).move_y);
 	(*fractol).move_x -= (mouse_x * 0.1 * zoom_before);
 	(*fractol).move_y -= (mouse_y * 0.1 * zoom_before);
-	// printf("\nAFTER: X: %f Y: %f ", (*fractol).move_x, (*fractol).move_y);
 }
 
 void	my_scrollhook(double xdelta, double ydelta, void *param)
