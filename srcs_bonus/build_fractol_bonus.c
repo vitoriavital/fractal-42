@@ -6,7 +6,7 @@
 /*   By: mavitori <mavitori@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/30 16:37:17 by mavitori          #+#    #+#             */
-/*   Updated: 2024/02/02 17:31:39 by mavitori         ###   ########.fr       */
+/*   Updated: 2024/02/19 16:08:13 by mavitori         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ void	ft_build_fractal(void *param)
 	fractol->max_i = 500;
 	while (x < fractol->image->width)
 	{
-		y = 0;
-		while (y < fractol->image->height)
+		y = -1;
+		while (++y < fractol->image->height)
 		{
 			if (fractol->type == 'M')
 				n = ft_mandelbrot_iterations(x, y, *fractol);
@@ -36,7 +36,6 @@ void	ft_build_fractal(void *param)
 				n = ft_burning_iterations(x, y, *fractol);
 			color = ft_def_color(n, *fractol);
 			mlx_put_pixel(fractol->image, x, y, color);
-			y++;
 		}
 		x++;
 	}
