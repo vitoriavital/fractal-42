@@ -1,5 +1,11 @@
 # Fract-ol
 
+<p align="center">
+  <img src="https://game.42sp.org.br/static/assets/achievements/fract-olm.png" alt="Printf Achievement" width="200" height="200">
+  <img src="https://res.cloudinary.com/dfjub9qt4/image/upload/v1707315356/libft_42.png" alt="Printf Square" width="200" height="200">
+</p>
+
+## Introduction
 Fract-ol is a project aimed at creating graphically beautiful fractals using computer graphics techniques. This project offers an opportunity to explore the mlx42 library, utilize mathematical concepts such as complex numbers, delve into optimization in computer graphics, and practice event handling. 
 
 MLX42 is a performant, easy to use, cross-platform windowing library to create graphical applications without having to work directly with the native Windowing Framework of the given operating system.
