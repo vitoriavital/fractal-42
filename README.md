@@ -1,8 +1,8 @@
 # Fract-ol
 
 <p align="center">
-  <img src="https://game.42sp.org.br/static/assets/achievements/fract-olm.png" alt="Printf Achievement" width="200" height="200">
-  <img src="https://game.42sp.org.br/static/assets/achievements/fract-olm.png" alt="Printf Square" width="200" height="200">
+  <img src="https://game.42sp.org.br/static/assets/achievements/fract-olm.png" alt="Fractol Achievement" width="200" height="200">
+  <img src="https://asset.cloudinary.com/dfjub9qt4/51ef15d9e5273039fc9f22f661721d6b" alt="Fractol Square" width="200" height="200">
 </p>
 
 ## Introduction
