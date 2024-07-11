@@ -1,7 +1,7 @@
 # Fract-ol
 
 <p align="center">
-  <img src="https://game.42sp.org.br/static/assets/achievements/fract-olm.png" alt="Fractol Achievement" width="200" height="200">
+  <img src="https://github.com/ayogun/42-project-badges/raw/main/badges/fract-olm.png" alt="Fractol Achievement" width="200" height="200">
   <img src="https://res.cloudinary.com/dfjub9qt4/image/upload/v1708631992/fractal_42.png" alt="Fractol Square" width="200" height="200">
 </p>
 
